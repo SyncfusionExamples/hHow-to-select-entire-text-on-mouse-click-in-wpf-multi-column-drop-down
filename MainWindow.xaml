@@ -1,0 +1,38 @@
+﻿<Window x:Class="SfMultiColumnDropDownDemo.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"        
+        xmlns:local="clr-namespace:SfMultiColumnDropDownDemo"
+        xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
+        Title="SfMultiColumnDropDownDemo"       
+        Icon="App.ico"
+        Width="650"
+        Height="600"
+        WindowStartupLocation="CenterScreen">
+    <Window.DataContext>
+        <local:ViewModel />
+    </Window.DataContext>
+    <Grid>
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+            <syncfusion:SfMultiColumnDropDownControl x:Name="MultiColumnControl"
+                                                 Width="175"
+                                                 Height="25"
+                                                 AutoGenerateColumns="False"
+                                                 SelectedIndex="0"
+                                                 TextSelectionOnFocus="True"
+                                                 DisplayMember="EmployeeName"
+                                                 ValueMember="EmployeeName"
+                                                 VerticalAlignment="Top"
+                                                 ItemsSource="{Binding EmployeeDetails}">
+                <syncfusion:SfMultiColumnDropDownControl.Columns>
+                    <syncfusion:GridTextColumn MappingName="EmployeeName" HeaderText="Employee Name" />
+                    <syncfusion:GridTextColumn MappingName="EmployeeAge" HeaderText="Employee Age" />
+                    <syncfusion:GridTextColumn MappingName="EmployeeArea" HeaderText="Employee Area" />
+                    <syncfusion:GridTextColumn MappingName="EmployeeGender" HeaderText="Employee Gender" />
+                    <syncfusion:GridTextColumn MappingName="ExperienceInMonth" HeaderText="Experience In Month" />
+                    <syncfusion:GridNumericColumn MappingName="EmployeeSalary" HeaderText="Employee Salary" />
+                </syncfusion:SfMultiColumnDropDownControl.Columns>
+            </syncfusion:SfMultiColumnDropDownControl>
+            <TextBox Margin="20" Height="30" Width="200" />
+        </StackPanel>
+    </Grid>
+</Window>
