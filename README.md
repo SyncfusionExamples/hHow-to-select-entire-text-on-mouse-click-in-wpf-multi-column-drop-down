@@ -61,5 +61,7 @@ Take a moment to peruse the [WPF MultiColumnDropDown - Editing and Auto complete
 
 Please refer this [link](https://www.syncfusion.com/wpf-controls/multi-column-dropdown) to know about the essential features of WPF MultiColumnDropDown.
 
+KB article - [How to select entire text on mouse click in WPF MultiColumnDropDown (SfMultiColumnDropDown)](https://www.syncfusion.com/kb/12505/how-to-select-entire-text-on-mouse-click-in-wpf-multicolumndropdown-sfmulticolumndropdown)
+
 ## Requirements to run the demo
 Visual Studio 2015 and above versions
